@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.content {
+  min-height: calc(100vh - 64px - 70px);
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+}
+
+.title2 {
+  width: 100%;
+  font-size: 18px!important;
+  background-color: rgba(0, 0, 0, 0.48);
+}
+
+.card-action{
+  height: 70px;
+}
+.card .card-content{
+  padding:12px;
+  height:80px;
+}
+.card .card-content p{
+  display: grid;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+}
+.card{
+  margin: 0 40px 40px 0;
+}
+.cart{
+  position:fixed;
+  bottom:2rem;
+  right: 2rem;
+  cursor:pointer;
+  z-index: 5;
+  padding: 1rem;
+}
+.cart-quantity{
+
+}
+.basket-list{
+  position:fixed;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  background: #fff;
+  width: 50rem;
+  max-width: 95%;
+  animation: show 500ms ease-in-out;
+}
+.btn{
+  margin: 5px;
+}
+.delete_items_basket{
+  cursor: pointer;
+}
+@keyframes show{
+  from{
+    tio:70%;
+    opacity: 0;
+  }
+  to{
+    top:50%;
+    opacity:1;
+  }
+}
